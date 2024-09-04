@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461246911859",
+    "project_id": "my-urban-app",
+    "storage_bucket": "my-urban-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461246911859:android:70170859650473dc156106",
+        "android_client_info": {
+          "package_name": "com.urban.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiyb_OjAGJkcIV0E60VWfnTPSafUQVU34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
