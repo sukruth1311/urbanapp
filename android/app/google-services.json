@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344917628084",
+    "project_id": "urban-gardening-113b6",
+    "storage_bucket": "urban-gardening-113b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344917628084:android:b251220a13b7002ec8b3e1",
+        "android_client_info": {
+          "package_name": "com.example.urban_gardening"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwy2Qp3z7mmCQ54TksFFvocF1Y4XnfUu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
