@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:urban_gardening/Chat/chat.dart';
+import 'package:urban_gardening/recommendations/plantrec.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -87,7 +89,22 @@ class _HomepageState extends State<Homepage> {
           ],
         ),
       ),
-      body: Text("data"),
+      body: Column(
+        children: [
+          ElevatedButton(
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => GardenRecommendationScreen()),
+    );
+  },
+  child: Text("Plant"),
+),
+          ElevatedButton(onPressed: (){
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>ChatPage()));
+          }, child: Text("Chat"))
+        ],
+      ),
     );
   }
 }
