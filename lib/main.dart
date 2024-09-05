@@ -9,6 +9,7 @@ import 'package:urban_gardening/authentication/Auth.dart';
 import 'package:urban_gardening/community.dart';
 import 'package:urban_gardening/firebase_options.dart';
 import 'package:urban_gardening/Recommendations/plantrec.dart';
+import 'package:urban_gardening/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,9 +30,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       
-      home:AuthPage()
+      home:AuthPage(),
     );
   }
 }

@@ -60,6 +60,7 @@ class Community extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const BackButton(color: Color.fromARGB(255, 243, 153, 153)),
+        
         centerTitle: true,
         title: Text(
           "Community",
@@ -69,6 +70,7 @@ class Community extends StatelessWidget {
           ),
         ),
         backgroundColor: Color.fromRGBO(88, 140, 108, 1),
+        
       ),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('posts').snapshots(),
@@ -82,10 +84,8 @@ class Community extends StatelessWidget {
           return ListView.builder(
             itemCount: posts.length,
             itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                child: BlogPostWidget(post: posts[index]),
-              );
+              return BlogPostWidget(post: posts[index]);
+              
             },
           );
         },
@@ -336,6 +336,7 @@ class BlogPostWidget extends StatelessWidget {
                   onPressed: likePost,
                 ),
                 Text('${post.likes} Likes'),
+                SizedBox(width: 25,),
                 IconButton(
                   icon: Icon(Icons.comment),
                   onPressed: () {
